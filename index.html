@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Modern animated portfolio website for Ankush Panchal."
+    />
+    <title>Ankush Panchal | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="noise"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <header class="header glass">
+      <a href="#home" class="logo">Ankush<span>.dev</span></a>
+      <button id="menuToggle" class="menu-btn" aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav id="navMenu" class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Software Engineer • Backend Specialist</p>
+          <h1>Building Scalable Enterprise Apps with Clean Architecture</h1>
+          <p class="hero-text">
+            I am Ankush Panchal, a full-stack developer with 3+ years of
+            experience building multi-tenant platforms, marketplace
+            integrations, and high-performance APIs using .NET and Angular.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="profile-card glass">
+            <p class="chip">.NET Core • Microservices • Kafka • Redis</p>
+            <h2>Ankush Panchal</h2>
+            <p>
+              Delivering reliable backend systems, robust APIs, and scalable
+              business applications.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About Me</p>
+          <h2>Engineering Reliable, Scalable Products</h2>
+        </div>
+        <div class="about-grid">
+          <article class="glass card reveal">
+            <h3>Who I Am</h3>
+            <p>
+              Full-stack engineer experienced in enterprise application
+              development using .NET Core, ASP.NET Core Web API, Angular, and
+              strong backend architecture principles.
+            </p>
+          </article>
+          <article class="glass card reveal">
+            <h3>What I Deliver</h3>
+            <p>
+              Multi-tenant systems, secure JWT/OAuth2 APIs, repository and CQRS
+              patterns, and integration-heavy solutions across REST, SOAP, and
+              WCF ecosystems.
+            </p>
+          </article>
+          <article class="glass card reveal">
+            <h3>What Drives Me</h3>
+            <p>
+              Ownership, continuous learning, and solving complex real-world
+              business workflows with clean, maintainable, and future-ready
+              software.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Skills</p>
+          <h2>Technologies I Work With</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill reveal"><i class="fa-solid fa-code"></i> C# / .NET Core</div>
+          <div class="skill reveal"><i class="fa-solid fa-server"></i> ASP.NET Core Web API</div>
+          <div class="skill reveal"><i class="fa-brands fa-angular"></i> Angular / TypeScript</div>
+          <div class="skill reveal"><i class="fa-solid fa-diagram-project"></i> Microservices / CQRS</div>
+          <div class="skill reveal"><i class="fa-solid fa-database"></i> PostgreSQL / MySQL / SQL Server</div>
+          <div class="skill reveal"><i class="fa-solid fa-shield-halved"></i> JWT / OAuth2 / RBAC</div>
+          <div class="skill reveal"><i class="fa-solid fa-plug"></i> REST / SOAP / WCF Integrations</div>
+          <div class="skill reveal"><i class="fa-solid fa-bolt"></i> Kafka / Redis</div>
+          <div class="skill reveal"><i class="fa-brands fa-git-alt"></i> Git / Postman / Swagger</div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Portfolio</p>
+          <h2>Key Enterprise Projects</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card glass reveal tilt">
+            <h3>Arihant Travels — Multi-GDS Platform</h3>
+            <p>
+              Unified travel booking platform integrating Amadeus, TravelPort
+              UAPI, and ITQ with multi-tenant company isolation, JWT + 6 roles,
+              and support for B2B, B2C, and SuperAdmin Angular apps.
+            </p>
+          </article>
+          <article class="project-card glass reveal tilt">
+            <h3>Inventory & Marketplace Sync</h3>
+            <p>
+              Led Amazon and eBay integrations on a CQRS-based system with
+              Windows Services for inventory, order, and stock synchronization
+              to reduce manual reconciliation.
+            </p>
+          </article>
+          <article class="project-card glass reveal tilt">
+            <h3>MiddleMan & Ezeo ERP Integrations</h3>
+            <p>
+              Built two-way sync pipelines and ERP middleware/plugin workflows
+              with retry handling, role-based access, and robust data flow
+              between nopCommerce, ERPNext, and Ezeo ERP.
+            </p>
+          </article>
+          <article class="project-card glass reveal tilt">
+            <h3>Rental Tripura POS System</h3>
+            <p>
+              Developed a scalable POS solution for rental operations with
+              billing workflows, product and stock management, and reliable
+              backend APIs focused on performance, maintainability, and
+              business-friendly daily operations.
+            </p>
+          </article>
+          <article class="project-card glass reveal tilt">
+            <h3>Distributed Order Management Platform</h3>
+            <p>
+              Designed event-driven order orchestration using .NET
+              microservices, Kafka messaging, Redis caching, and Saga workflow
+              handling for resilient checkout, payment, and fulfillment flows.
+            </p>
+          </article>
+          <article class="project-card glass reveal tilt">
+            <h3>API Gateway & Identity Service Suite</h3>
+            <p>
+              Built centralized API Gateway with JWT/OAuth2 authentication,
+              rate limiting, and role-based access controls for secure and
+              scalable communication across multiple internal services.
+            </p>
+          </article>
+          <article class="project-card glass reveal tilt">
+            <h3>Real-Time Analytics & Reporting Engine</h3>
+            <p>
+              Implemented stream processing pipeline with Kafka consumers,
+              PostgreSQL materialized views, and background workers to generate
+              near real-time business dashboards and operational reports.
+            </p>
+          </article>
+          <article class="project-card glass reveal tilt">
+            <h3>Multi-Tenant Billing & Subscription Service</h3>
+            <p>
+              Developed a tenant-aware billing engine supporting plan
+              provisioning, invoice generation, payment webhooks, and
+              company-level data isolation with clean architecture patterns.
+            </p>
+          </article>
+          <article class="project-card glass reveal tilt">
+            <h3>High-Volume Notification Delivery System</h3>
+            <p>
+              Created scalable notification service for email, SMS, and
+              in-app channels using queue-based processing, retry policies, and
+              idempotent handlers to ensure reliable high-throughput delivery.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's Build Something Amazing Together</h2>
+        </div>
+        <div class="contact-box glass reveal">
+          <div class="contact-details">
+            <a class="contact-item" href="mailto:ankushtechnical111@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+              <span>ankushtechnical111@gmail.com</span>
+            </a>
+            <a class="contact-item" href="tel:+919636933013">
+              <i class="fa-solid fa-phone"></i>
+              <span>+91 96369 33013</span>
+            </a>
+            <p class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Ahmedabad, Gujarat, India</span>
+            </p>
+          </div>
+          <p>Reach out on your favorite platform:</p>
+          <div class="socials">
+            <a
+              class="social whatsapp"
+              href="https://wa.me/919636933013"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a
+              class="social instagram"
+              href="https://instagram.com/ankush.panchall"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              class="social linkedin"
+              href="https://www.linkedin.com/in/ankush-panchal-62963819b/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a
+              class="social github"
+              href="https://github.com/ankush144"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              class="social youtube"
+              href="https://www.youtube.com/@mrankushtechnical"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Designed & Built by Ankush Panchal • <span id="year"></span></p>
+    </footer>
+  </body>
+</html>
